@@ -4,3 +4,5 @@ I am experienced in Java, PHP, Lua, CSS and JavaScript and currently am on my wa
 
 I'm also developer (and basically System Administrator) over at [Tesseract Servers](https://github.com/TesseractServers),
 a growing Garry's Mod community focussing on CityRP.
+
+You can contact me via Discord: `TASSIA#5509`
