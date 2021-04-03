@@ -6,6 +6,8 @@ import {LoadRoutes} from "../Routes";
 
 export class WebsiteApplication extends Application {
 
+	public static readonly AVATAR = "https://avatars.githubusercontent.com/u/38081490";
+
 	public constructor() {
 		super("Website", "1.0.0");
 	}
