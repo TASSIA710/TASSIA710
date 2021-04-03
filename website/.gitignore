@@ -8,6 +8,8 @@ node_modules/
 # Generated Shit
 .eslintcache
 src/react-app-env.d.ts
+src/reportWebVitals.ts
+src/setupTests.ts
 
 
 
