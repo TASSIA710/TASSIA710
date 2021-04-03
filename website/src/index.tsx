@@ -2,9 +2,9 @@
 // Licensed under the MIT License.
 
 import {App, Initialize} from "@tassilo/boiling-react";
-import {WebsiteApplication} from "./Classes";
+import {Website} from "./Classes";
 
 import "./CSS/Application.scss";
 
-App.SetApplication(new WebsiteApplication());
+App.SetApplication(new Website());
 Initialize().then().catch(console.error);

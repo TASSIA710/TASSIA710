@@ -5,7 +5,7 @@ import {Application, Route} from "@tassilo/boiling-react";
 import {LoadRoutes} from "../Routes";
 import {Person} from "../Types";
 
-export class WebsiteApplication extends Application {
+export class Website extends Application {
 
 	public static readonly SELF: Person = {
 		Avatar: "https://avatars.githubusercontent.com/u/38081490",

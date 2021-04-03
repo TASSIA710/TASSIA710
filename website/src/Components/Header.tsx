@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import {Component} from "react";
-import {WebsiteApplication} from "../Classes";
+import {Icons, Website} from "../Classes";
 import {Link} from "../Components";
 
 interface HeaderProperties {
@@ -16,16 +16,10 @@ export class Header extends Component<HeaderProperties> {
 	}
 
 	public render() {
-		const discordIcon = "https://img.icons8.com/fluent/512/000000/discord-new-logo.svg";
-		const gitHubIcon = "https://img.icons8.com/fluent/512/000000/github.svg";
-		const steamIcon = "https://img.icons8.com/fluent/512/000000/steam.svg";
-		const twitchIcon = "https://img.icons8.com/fluent/512/000000/twitch.svg";
-		const tinderIcon = "https://img.icons8.com/fluent/512/000000/tinder.svg";
-
 		return <div className="page-header">
 
 			<Link href="/">
-				<img className="avatar" src={WebsiteApplication.SELF.Avatar} alt="logo" />
+				<img className="avatar" src={Website.SELF.Avatar} alt="logo" />
 			</Link>
 
 			<div className="links">
@@ -39,11 +33,11 @@ export class Header extends Component<HeaderProperties> {
 			</div>
 
 			<div className="social">
-				<Link href="/social/discord/"><img src={discordIcon} alt="discord" /></Link>
-				<Link href="/social/github/"><img src={gitHubIcon} alt="github" /></Link>
-				<Link href="/social/steam/"><img src={steamIcon} alt="steam" /></Link>
-				<Link href="/social/twitch/"><img src={twitchIcon} alt="twitch" /></Link>
-				<Link href="/social/tinder/"><img src={tinderIcon} alt="tinder" /></Link>
+				<Link href="/social/discord/"><img src={Icons.DISCORD} alt="discord" /></Link>
+				<Link href="/social/github/"><img src={Icons.GITHUB} alt="github" /></Link>
+				<Link href="/social/steam/"><img src={Icons.STEAM} alt="steam" /></Link>
+				<Link href="/social/twitch/"><img src={Icons.TWITCH} alt="twitch" /></Link>
+				<Link href="/social/tinder/"><img src={Icons.TINDER} alt="tinder" /></Link>
 			</div>
 
 		</div>;
