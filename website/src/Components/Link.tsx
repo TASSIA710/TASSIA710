@@ -1,21 +1,36 @@
 // Website - (c) 2021 Tassilo <tassia710@gmail.com>
 // Licensed under the MIT License.
 
-import {Component} from "react";
+import React, {Component, CSSProperties} from "react";
+import {App} from "@tassilo/boiling-react";
 
 interface LinkProperties {
 	href: string;
 	reload: boolean;
+	className: string;
+	style: CSSProperties;
 }
 
 export class Link extends Component<LinkProperties> {
 
 	public static defaultProps = {
 		"reload": false,
+		"className": "",
+		style: {},
 	};
 
+	private static clickListener(props: LinkProperties, event: React.MouseEvent) {
+		event.preventDefault();
+		App.Redirect(props.href, props.reload).then().catch(console.error);
+	}
+
 	public render() {
-		return <a href={this.props.href}>{this.props.children}</a>;
+		return <a href={this.props.href}
+				  className={this.props.className}
+				  style={this.props.style}
+				  onClick={event => Link.clickListener(this.props, event)}>
+			{this.props.children}
+		</a>;
 	}
 
 }

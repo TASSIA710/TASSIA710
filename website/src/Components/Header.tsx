@@ -5,7 +5,15 @@ import {Component} from "react";
 import {WebsiteApplication} from "../Classes";
 import {Link} from "../Components";
 
-export class Header extends Component {
+interface HeaderProperties {
+	tab: string;
+}
+
+export class Header extends Component<HeaderProperties> {
+
+	private classForTab(tab: string): string {
+		return this.props.tab === tab ? "active" : "";
+	}
 
 	public render() {
 		const discordIcon = "https://img.icons8.com/fluent/512/000000/discord-new-logo.svg";
@@ -17,17 +25,17 @@ export class Header extends Component {
 		return <div className="page-header">
 
 			<Link href="/">
-				<img className="avatar" src={WebsiteApplication.AVATAR} alt="logo" />
+				<img className="avatar" src={WebsiteApplication.SELF.Avatar} alt="logo" />
 			</Link>
 
 			<div className="links">
-				<Link href="/">Home</Link>
-				<Link href="/about/">About</Link>
-				<Link href="/projects/">Projects</Link>
-				<Link href="/tools/">Tools</Link>
-				<Link href="/downloads/">Downloads</Link>
-				<Link href="/social/">Social</Link>
-				<Link href="/contact/">Contact</Link>
+				<Link href="/" className={this.classForTab("home")}>Home</Link>
+				<Link href="/about/" className={this.classForTab("about")}>About</Link>
+				<Link href="/projects/" className={this.classForTab("projects")}>Projects</Link>
+				<Link href="/tools/" className={this.classForTab("tools")}>Tools</Link>
+				<Link href="/downloads/" className={this.classForTab("downloads")}>Downloads</Link>
+				<Link href="/social/" className={this.classForTab("social")}>Social</Link>
+				<Link href="/contact/" className={this.classForTab("contact")}>Contact</Link>
 			</div>
 
 			<div className="social">

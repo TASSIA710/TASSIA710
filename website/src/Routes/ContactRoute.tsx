@@ -4,14 +4,14 @@
 import {Route} from "@tassilo/boiling-react";
 import {Views} from "../Classes/Views";
 
-export class IndexRoute extends Route {
+export class ContactRoute extends Route {
 
 	public constructor() {
-		super("Index", /\//);
+		super("Contact", /\/contact\//);
 	}
 
 	public async Process(matches: RegExpMatchArray): Promise<void> {
-		Views.Render(<div/>, "home");
+		Views.Render(<div/>, "contact");
 	}
 
 }

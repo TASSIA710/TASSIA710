@@ -4,11 +4,15 @@
 import {Component} from "react";
 import {Header} from "../Components";
 
-export class Layout extends Component {
+interface LayoutProperties {
+	superTab: string;
+}
+
+export class Layout extends Component<LayoutProperties> {
 
 	public render() {
 		return <div>
-			<Header/>
+			<Header tab={this.props.superTab} />
 			{this.props.children}
 		</div>;
 	}

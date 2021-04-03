@@ -42,7 +42,7 @@
 	margin-left: $MD2;
 }
 
-.page-header .links a:hover {
+.page-header .links a:hover, .page-header .links a.active {
 	color: $Primary;
 }
 

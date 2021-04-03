@@ -3,10 +3,14 @@
 
 import {Application, Route} from "@tassilo/boiling-react";
 import {LoadRoutes} from "../Routes";
+import {Person} from "../Types";
 
 export class WebsiteApplication extends Application {
 
-	public static readonly AVATAR = "https://avatars.githubusercontent.com/u/38081490";
+	public static readonly SELF: Person = {
+		Avatar: "https://avatars.githubusercontent.com/u/38081490",
+		Birthday: new Date(2003, 8, 26)
+	};
 
 	public constructor() {
 		super("Website", "1.0.0");
