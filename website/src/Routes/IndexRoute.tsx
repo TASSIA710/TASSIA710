@@ -3,6 +3,7 @@
 
 import {Route} from "@tassilo/boiling-react";
 import ReactDOM from "react-dom";
+import {Layout} from "../Components";
 
 export class IndexRoute extends Route {
 
@@ -12,7 +13,7 @@ export class IndexRoute extends Route {
 
 	public async Process(matches: RegExpMatchArray): Promise<void> {
 		// TODO
-		ReactDOM.render(<div/>, document.getElementById("root"));
+		ReactDOM.render(<Layout/>, document.getElementById("root"));
 	}
 
 }

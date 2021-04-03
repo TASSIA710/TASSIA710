@@ -4,5 +4,7 @@
 import {App, Initialize} from "@tassilo/boiling-react";
 import {WebsiteApplication} from "./Classes";
 
+import "./CSS/Application.scss";
+
 App.SetApplication(new WebsiteApplication());
 Initialize().then().catch(console.error);
