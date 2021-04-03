@@ -5,10 +5,10 @@ import {Route} from "@tassilo/boiling-react";
 import {Views} from "../../Classes";
 import {SocialView} from "../../Components";
 
-export class SocialIndexRoute extends Route {
+export class SocialRoute extends Route {
 
 	public constructor() {
-		super("Social Index", /\/social\//);
+		super("Social", /\/social\//);
 	}
 
 	public async Process(matches: RegExpMatchArray): Promise<void> {
