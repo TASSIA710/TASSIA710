@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import {Component} from "react";
-import {Link} from "../../Components";
+import {Link} from "@tassilo/boiling-react";
 
 interface SocialCardProperties {
 	icon: string;

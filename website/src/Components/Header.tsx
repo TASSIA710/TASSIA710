@@ -3,7 +3,7 @@
 
 import {Component} from "react";
 import {Icons, Website} from "../Classes";
-import {Link} from "../Components";
+import {Link} from "@tassilo/boiling-react";
 
 interface HeaderProperties {
 	tab: string;

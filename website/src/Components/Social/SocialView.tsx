@@ -3,7 +3,7 @@
 
 import {Component} from "react";
 import {SocialCard} from "../../Components";
-import {Colors, Icons} from "../../Classes";
+import {Icons} from "../../Classes";
 
 export class SocialView extends Component {
 
