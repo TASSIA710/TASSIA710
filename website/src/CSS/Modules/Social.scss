@@ -7,13 +7,8 @@
 	padding-top: $LG3;
 }
 
-.social-card {
-	background-color: $Gray;
-	box-shadow: 0 0 2px $Gray1;
-	padding: $MD1;
-	border-radius: $MD1;
-	display: grid;
-	grid-template-columns: min-content auto;
+.social-card-link {
+	text-decoration: none;
 }
 
 .social-card img {
@@ -34,7 +29,6 @@
 	font-family: $FontSans;
 	font-size: $MD2;
 	text-decoration: none;
-	color: $Gray;
 	font-weight: 600;
 	letter-spacing: 0.05em;
 }
@@ -43,6 +37,55 @@
 	font-family: $FontSans;
 	font-size: $MD1;
 	text-decoration: none;
-	color: $Disabled;
 	font-weight: 400;
+}
+
+
+
+.social-card {
+	padding: $MD1;
+	border-radius: $SM3;
+	display: grid;
+	grid-template-columns: min-content auto;
+
+	color: $Text;
+	border: 1px solid darken($Gray, 10%);
+	background-color: $Gray;
+	box-shadow: 0 0 8px 2px transparent;
+
+	-webkit-transition: color 0.2s, box-shadow 0.2s, border 0.2s, background-color 0.2s;
+}
+
+.social-card:hover {
+	color: $Gray;
+}
+
+.social-card-discord:hover {
+	border: 1px solid darken($Discord, 5%);
+	background-color: $Discord;
+	box-shadow: 0 0 8px 2px $Discord;
+}
+
+.social-card-github:hover {
+	border: 1px solid darken($GitHub, 5%);
+	background-color: $GitHub;
+	box-shadow: 0 0 8px 2px $GitHub;
+}
+
+.social-card-steam:hover {
+	border: 1px solid darken($Steam, 5%);
+	background-color: $Steam;
+	box-shadow: 0 0 8px 2px $Steam;
+}
+
+.social-card-twitch:hover {
+	border: 1px solid darken($Twitch, 5%);
+	background-color: $Twitch;
+	box-shadow: 0 0 8px 2px $Twitch;
+}
+
+.social-card-tinder:hover {
+	border: 1px solid darken($Tinder, 5%);
+	background-color: $Tinder;
+	box-shadow: 0 0 8px 2px $Tinder;
 }
