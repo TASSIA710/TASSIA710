@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Working Directory
-        run: "cd $GITHUB_WORKSPACE/website"
+        run: "cd ./website"
       - name: "Install (via Yarn)"
         uses: borales/actions-yarn@v2.0.0
         with:
