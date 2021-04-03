@@ -5,8 +5,9 @@ node_modules/
 .idea/
 *.iml
 
-# React Generated Shit
-react-app-env.d.ts
+# Generated Shit
+.eslintcache
+src/react-app-env.d.ts
 
 
 
