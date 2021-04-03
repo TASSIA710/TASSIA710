@@ -1,9 +1,19 @@
-# Gradle
-.gradle/
-
-# Build Artifact
-build/
+# Dependencies
+node_modules/
 
 # IntelliJ
 .idea/
 *.iml
+
+# React Generated Shit
+react-app-env.d.ts
+
+
+
+# Lockfiles (I know some consider this bad habit, but I like to keep my repositories
+# 			 as clean as possible. If someone has an issue with a specific dependency
+# 			 then instead of relying of a specific lock-file, they should just upload
+# 			 their lock-files and let us investigate. After all, compatibility shouldn't
+# 			 break, just because someone didn't use the correct lock-file.)
+package-lock.json
+yarn.lock
