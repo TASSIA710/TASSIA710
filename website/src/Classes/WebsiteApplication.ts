@@ -1,4 +1,4 @@
-// Boiling React - (c) 2021 Tassilo <tassia710@gmail.com>
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
 // Licensed under the MIT License.
 
 import {Application, Route} from "@tassilo/boiling-react";
