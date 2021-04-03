@@ -2,26 +2,30 @@
 // Licensed under the MIT License.
 
 import {Component} from "react";
+import {Link} from "../../Components";
 
 interface SocialCardProperties {
 	icon: string;
+	social: string;
 	name: string;
-	color: string;
 	description: string;
 }
 
 export class SocialCard extends Component<SocialCardProperties> {
 
 	public render() {
-		return <div className="col-6">
-			<div className="social-card" style={{background: this.props.color}}>
+		const className = "social-card social-card-" + this.props.social;
+		const link = "/social/" + this.props.social + "/";
+
+		return <Link href={link} newTab={true} className="social-card-link col-6">
+			<div className={className}>
 				<img src={this.props.icon} alt="logo" />
 				<div className="social-info">
 					<div className="social-title">{this.props.name}</div>
 					<div className="social-description">{this.props.description}</div>
 				</div>
 			</div>
-		</div>;
+		</Link>;
 	}
 
 }

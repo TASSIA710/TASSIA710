@@ -33,11 +33,27 @@ export class Header extends Component<HeaderProperties> {
 			</div>
 
 			<div className="social">
-				<Link href="/social/discord/"><img src={Icons.DISCORD} alt="discord" /></Link>
-				<Link href="/social/github/"><img src={Icons.GITHUB} alt="github" /></Link>
-				<Link href="/social/steam/"><img src={Icons.STEAM} alt="steam" /></Link>
-				<Link href="/social/twitch/"><img src={Icons.TWITCH} alt="twitch" /></Link>
-				<Link href="/social/tinder/"><img src={Icons.TINDER} alt="tinder" /></Link>
+
+				<Link href="/social/discord/" newTab={true}>
+					<img src={Icons.DISCORD} alt="discord" />
+				</Link>
+
+				<Link href="/social/github/" newTab={true}>
+					<img src={Icons.GITHUB} alt="github" />
+				</Link>
+
+				<Link href="/social/steam/" newTab={true}>
+					<img src={Icons.STEAM} alt="steam" />
+				</Link>
+
+				<Link href="/social/twitch/" newTab={true}>
+					<img src={Icons.TWITCH} alt="twitch" />
+				</Link>
+
+				<Link href="/social/tinder/" newTab={true}>
+					<img src={Icons.TINDER} alt="tinder" />
+				</Link>
+
 			</div>
 
 		</div>;

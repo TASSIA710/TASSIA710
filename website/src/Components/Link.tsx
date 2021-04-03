@@ -9,6 +9,7 @@ interface LinkProperties {
 	reload: boolean;
 	className: string;
 	style: CSSProperties;
+	newTab: boolean;
 }
 
 export class Link extends Component<LinkProperties> {
@@ -17,6 +18,7 @@ export class Link extends Component<LinkProperties> {
 		"reload": false,
 		"className": "",
 		style: {},
+		newTab: false,
 	};
 
 	private static clickListener(props: LinkProperties, event: React.MouseEvent) {

@@ -12,19 +12,19 @@ export class SocialView extends Component {
 
 			<div className="row g-5">
 
-				<SocialCard name="Discord" icon={Icons.DISCORD} color={Colors.DISCORD}
+				<SocialCard social="discord" name="Discord" icon={Icons.DISCORD}
 							description="Join my Discord!" />
 
-				<SocialCard name="GitHub" icon={Icons.GITHUB} color={Colors.GITHUB}
+				<SocialCard social="github" name="GitHub" icon={Icons.GITHUB}
 							description="Check out my work on GitHub." />
 
-				<SocialCard name="Steam" icon={Icons.STEAM} color={Colors.STEAM}
+				<SocialCard social="steam" name="Steam" icon={Icons.STEAM}
 							description="Visit my Steam profile. I game a lot." />
 
-				<SocialCard name="Twitch" icon={Icons.TWITCH} color={Colors.TWITCH}
+				<SocialCard social="twitch" name="Twitch" icon={Icons.TWITCH}
 							description="Very rarely I do stream." />
 
-				<SocialCard name="Tinder" icon={Icons.TINDER} color={Colors.TINDER}
+				<SocialCard social="tinder" name="Tinder" icon={Icons.TINDER}
 							description="You wish." />
 
 			</div>
