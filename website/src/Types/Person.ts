@@ -6,4 +6,10 @@ export interface Person {
 	Avatar: string;
 	Birthday: Date;
 
+	SocialDiscord: string;
+	SocialGitHub: string;
+	SocialSteam: string;
+	SocialTwitch: string;
+	SocialTinder: string;
+
 }
