@@ -1,7 +1,7 @@
 // Website - (c) 2021 Tassilo <tassia710@gmail.com>
 // Licensed under the MIT License.
 
-import {Console} from "../Classes";
+import {Console} from "../../Classes";
 
 export abstract class ConsoleCommand {
 
@@ -14,10 +14,20 @@ export abstract class ConsoleCommand {
 		this.Description = description;
 	}
 
-	public Print(line: string) {
-		Console.Print(this.Name, line);
+	abstract execute(args: string[], flags: any): Promise<number>
+
+
+
+	public Print(message: string) {
+		Console.Print(this.Name, message);
 	}
 
-	abstract execute(args: string[], flags: any): Promise<number>
+	public Warning(message: string) {
+		Console.Warning(this.Name, message);
+	}
+
+	public Error(message: string) {
+		Console.Error(this.Name, message);
+	}
 
 }

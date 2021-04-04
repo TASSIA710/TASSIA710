@@ -1,8 +1,7 @@
 // Website - (c) 2021 Tassilo <tassia710@gmail.com>
 // Licensed under the MIT License.
 
-import {ConsoleCommand} from "../Classes";
-import {stat} from "fs";
+import {ConsoleCommand} from "../../Classes";
 
 type ConsoleOutFeedback = (user: string, line: string) => void
 
@@ -54,14 +53,14 @@ export class Console {
 
 		// Unknown command?
 		if (command == null) {
-			Console.Print("system", "[ERROR] Unknown command. Type 'help' for a list of available commands.");
+			Console.Error("system", "Unknown command. Type 'help' for a list of available commands.");
 			return;
 		}
 
 		// Execute command
 		const status = await command.execute(args, flags);
 		if (status !== 0) {
-			Console.Print("system", "[ERROR] Program '" + command.Name + "' exited with non-zero exit code: " + status);
+			Console.Error("system", "Program '" + command.Name + "' exited with non-zero exit code: " + status);
 		}
 	}
 
@@ -73,6 +72,14 @@ export class Console {
 		} else {
 			throw new Error("No active feedback for console!");
 		}
+	}
+
+	public static Warning(user: string, message: string) {
+		Console.Print(user, "[WARNING] " + message);
+	}
+
+	public static Error(user: string, message: string) {
+		Console.Print(user, "[ERROR] " + message);
 	}
 
 }
