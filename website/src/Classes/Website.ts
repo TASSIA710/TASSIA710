@@ -33,7 +33,7 @@ export class Website extends Application {
 	}
 
 	public async Initialize(): Promise<void> {
-		Events.LoadEvent(Events.GetEvent());
+		Events.SetEvent(Events.GetActualEvent());
 	}
 
 }

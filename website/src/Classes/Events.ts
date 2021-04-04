@@ -6,16 +6,27 @@ import {App} from "@tassilo/boiling-react";
 
 export class Events {
 
-	public static GetEvent(): EventType {
+	private static loaded: EventType = EventType.NONE;
+
+	public static GetActualEvent(): EventType {
 		return EventType.NONE;
+	}
+
+	public static GetLoadedEvent(): EventType {
+		return Events.loaded;
+	}
+
+	public static SetEvent(event: EventType) {
+		Events.UnloadEvent(Events.loaded);
+		Events.loaded = event;
+		Events.LoadEvent(Events.loaded);
 	}
 
 
 
-	public static LoadEvent(event: EventType) {
+	private static LoadEvent(event: EventType) {
 		App.Logger().Info("Loading event " + event + "...");
 		switch (event) {
-			case EventType.NONE: Events.LoadNone(); break;
 			case EventType.XMAS_MONTH: /* TODO */ break;
 			case EventType.XMAS_DAYS: /* TODO */ break;
 			case EventType.NEW_YEARS: /* TODO */ break;
@@ -25,20 +36,15 @@ export class Events {
 		App.Logger().Info("Event " + event + " has been loaded!");
 	}
 
-	private static LoadNone() {
-		// Do nothing
-	}
-
 	private static LoadGayPride() {
 		document.body.classList.add("event-gay-pride");
 	}
 
 
 
-	public static UnloadEvent(event: EventType) {
+	private static UnloadEvent(event: EventType) {
 		App.Logger().Info("Unloading event " + event + "...");
 		switch (event) {
-			case EventType.NONE: Events.UnloadNone(); break;
 			case EventType.XMAS_MONTH: /* TODO */ break;
 			case EventType.XMAS_DAYS: /* TODO */ break;
 			case EventType.NEW_YEARS: /* TODO */ break;
@@ -46,10 +52,6 @@ export class Events {
 			case EventType.GAY_PRIDE: Events.UnloadGayPride(); break;
 		}
 		App.Logger().Info("Event " + event + " has been unloaded!");
-	}
-
-	private static UnloadNone() {
-		// Do nothing
 	}
 
 	private static UnloadGayPride() {
