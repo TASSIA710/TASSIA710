@@ -17,6 +17,8 @@ export class ConsoleView extends Component<ConsoleViewProperties, ConsoleViewSta
 	constructor(props: ConsoleViewProperties) {
 		super(props);
 		this.state = new ConsoleViewState();
+		this.addLine("system", "Running TS-DOS v1.0.0 - (c) 2021 Tassilo <tassia710@gmail.com>");
+		this.addLine("system", "Licensed under the MIT License.");
 	}
 
 	private static submitForm(event: React.FormEvent<HTMLFormElement>, view: ConsoleView) {
@@ -43,6 +45,13 @@ export class ConsoleView extends Component<ConsoleViewProperties, ConsoleViewSta
 	private static commandFeedback(user: string, line: string, view: ConsoleView, system: boolean = true) {
 		view.state.lines[view.state.lines.length] = <ConsoleLine user={user} content={line} system={system} />;
 		view.setState(view.state);
+	}
+
+
+
+	public addLine(user: string, message: string, system: boolean = true) {
+		const line = <ConsoleLine user={user} content={message} system={system} />;
+		this.state.lines[this.state.lines.length] = line;
 	}
 
 
