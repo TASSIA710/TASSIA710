@@ -3,3 +3,4 @@
 
 export {EventType} from "./Types/EventType";
 export type {Person} from "./Types/Person";
+export type {Project} from "./Types/Project";
