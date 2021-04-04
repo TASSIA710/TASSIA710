@@ -1,0 +1,57 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+.about-view {
+	padding-top: $LG3;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.about-text {
+	margin-right: $LG3;
+	background: $White;
+	border-radius: $SM3;
+	padding: $MD1;
+	border: 1px solid $Gray;
+	box-shadow: 0 0 8px $Gray1;
+
+	font-family: $FontHand;
+	font-size: $MD3;
+	letter-spacing: 0.025em;
+	color: $Text;
+}
+
+.about-avatar {
+	height: 20rem;
+	border-radius: 10rem;
+	border: 1px solid $Gray;
+	box-shadow: 0 0 8px $Gray1;
+	margin-bottom: $MD2;
+}
+
+.about-info {
+	margin-top: $MD2;
+	background: $White;
+	border-radius: $SM2;
+	padding: $SM2;
+	border: 1px solid $Gray;
+	box-shadow: 0 0 4px $Gray1;
+	text-align: left;
+
+	font-family: $FontSans;
+	font-size: $MD2;
+	letter-spacing: 0.025em;
+	color: $Text;
+
+	display: grid;
+	grid-template-columns: min-content auto;
+}
+
+.about-info img {
+	height: $LG1;
+	margin-right: $MD1;
+}
+
+

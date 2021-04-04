@@ -3,6 +3,7 @@
 
 import {Route} from "@tassilo/boiling-react";
 import {Views} from "../Classes";
+import {AboutView} from "../Components";
 
 export class AboutRoute extends Route {
 
@@ -11,7 +12,7 @@ export class AboutRoute extends Route {
 	}
 
 	public async Process(matches: RegExpMatchArray): Promise<void> {
-		Views.Render(<div/>, "about");
+		Views.Render(<AboutView/>, "about");
 	}
 
 }

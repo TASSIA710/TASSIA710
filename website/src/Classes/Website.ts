@@ -11,6 +11,11 @@ export class Website extends Application {
 		Avatar: "https://avatars.githubusercontent.com/u/38081490",
 		Birthday: new Date(2003, 8, 26),
 
+		Name: "Tassilo",
+		Age: 17,
+		Gender: "m",
+		Employment: "Unemployed",
+
 		SocialDiscord: "https://discord.gg/yHfceNC6",
 		SocialGitHub: "https://github.com/TASSIA710",
 		SocialSteam: "https://steamcommunity.com/id/tassia710",

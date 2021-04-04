@@ -6,6 +6,11 @@ export interface Person {
 	Avatar: string;
 	Birthday: Date;
 
+	Name: string;
+	Age: number;
+	Gender: string;
+	Employment: string;
+
 	SocialDiscord: string;
 	SocialGitHub: string;
 	SocialSteam: string;
