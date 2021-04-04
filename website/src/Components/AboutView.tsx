@@ -3,7 +3,6 @@
 
 import {Component} from "react";
 import {Website} from "../Classes";
-import {Link} from "@tassilo/boiling-react";
 
 export class AboutView extends Component {
 
