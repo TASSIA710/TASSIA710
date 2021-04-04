@@ -1,7 +1,11 @@
 // Website - (c) 2021 Tassilo <tassia710@gmail.com>
 // Licensed under the MIT License.
 
+import {App} from "@tassilo/boiling-react";
 import {ConsoleCommand} from "../../Classes";
+
+import {EventCommand} from "./Commands/EventCommand";
+import {HelpCommand} from "./Commands/HelpCommand";
 
 type ConsoleOutFeedback = (user: string, line: string) => void
 
@@ -28,6 +32,15 @@ export class Console {
 		Console.commands[command.Name.toLowerCase()] = command;
 	}
 
+	public static RegisterCommands() {
+		App.Logger().Info("Registering Console Commands...");
+
+		Console.RegisterCommand(new EventCommand());
+		Console.RegisterCommand(new HelpCommand());
+
+		App.Logger().Info("Registered " + Object.keys(Console.commands).length + " commands.");
+	}
+
 
 
 	public static async RunCommandPure(cmdString: string, output: ConsoleOutFeedback): Promise<void> {
@@ -35,8 +48,11 @@ export class Console {
 		Console.feedback = output
 
 		// Parse cmd string
-		const cmd: string = cmdString;
-		const args: string[] = [];
+		cmdString = cmdString.trim();
+		const splitIndex = cmdString.indexOf(" ");
+		const cmd: string = cmdString.substring(0, splitIndex !== -1 ? splitIndex : cmdString.length);
+		const argsStr = cmdString.substring(cmd.length).trim();
+		const args: string[] = argsStr === "" ? [] : argsStr.split(" ");
 		const flags: any = {};
 		// TODO
 

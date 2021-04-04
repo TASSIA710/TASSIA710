@@ -25,6 +25,7 @@ export class Events {
 
 
 	private static LoadEvent(event: EventType) {
+		if (event === EventType.NONE) return;
 		App.Logger().Info("Loading event " + event + "...");
 		switch (event) {
 			case EventType.XMAS_MONTH: /* TODO */ break;
@@ -43,6 +44,7 @@ export class Events {
 
 
 	private static UnloadEvent(event: EventType) {
+		if (event === EventType.NONE) return;
 		App.Logger().Info("Unloading event " + event + "...");
 		switch (event) {
 			case EventType.XMAS_MONTH: /* TODO */ break;
