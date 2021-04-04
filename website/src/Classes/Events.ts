@@ -9,7 +9,7 @@ export class Events {
 	private static loaded: EventType = EventType.NONE;
 
 	public static GetActualEvent(): EventType {
-		return EventType.XMAS;
+		return EventType.NONE;
 	}
 
 	public static GetLoadedEvent(): EventType {
