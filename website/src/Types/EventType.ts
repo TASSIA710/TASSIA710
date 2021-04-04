@@ -3,11 +3,11 @@
 
 export enum EventType {
 
-	NONE,
-	XMAS_MONTH,
-	XMAS_DAYS,
-	NEW_YEAR,
-	EASTER,
-	GAY_PRIDE,
+	NONE = "N/A",
+	XMAS_MONTH = "XMAS (Month)",
+	XMAS_DAYS = "XMAS (Days)",
+	NEW_YEARS = "New Years",
+	EASTER = "Easter",
+	GAY_PRIDE = "Gay Pride",
 
 }

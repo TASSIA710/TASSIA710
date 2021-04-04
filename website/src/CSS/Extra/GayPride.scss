@@ -1,0 +1,59 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+
+
+body.event-gay-pride {
+	background-image: linear-gradient(100deg,
+		transparentize($Gay1, 0) 0%,
+		transparentize($Gay2, 0.25) 20%,
+		transparentize($Gay3, 0.5) 40%,
+		transparentize($Gay4, 0.5) 60%,
+		transparentize($Gay5, 0.25) 80%,
+		transparentize($Gay6, 0) 100%);
+}
+
+
+
+body.event-gay-pride .page-header .avatar {
+	box-shadow: 3px 0 2px $Gay1,
+		1px 2px 2px $Gay2,
+		-1px 2px 2px $Gay3,
+		-3px 0 2px $Gay4,
+		-1px -2px 2px $Gay5,
+		1px -2px 2px $Gay6;
+}
+
+
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 1):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 1).active {
+	color: $Gay1;
+}
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 2):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 2).active {
+	color: $Gay2;
+}
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 3):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 3).active {
+	color: $Gay3;
+}
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 4):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 4).active {
+	color: $Gay4;
+}
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 5):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 5).active {
+	color: $Gay5;
+}
+
+body.event-gay-pride .page-header .links a:nth-child(6n + 6):hover,
+body.event-gay-pride .page-header .links a:nth-child(6n + 6).active {
+	color: $Gay6;
+}

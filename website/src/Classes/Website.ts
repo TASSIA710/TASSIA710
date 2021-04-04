@@ -4,6 +4,7 @@
 import {Application, Route} from "@tassilo/boiling-react";
 import {LoadRoutes} from "../Routes";
 import {Person} from "../Types";
+import {Events} from "../Classes";
 
 export class Website extends Application {
 
@@ -29,6 +30,10 @@ export class Website extends Application {
 
 	public LoadRoutes(): Route[] {
 		return LoadRoutes();
+	}
+
+	public async Initialize(): Promise<void> {
+		Events.LoadEvent(Events.GetEvent());
 	}
 
 }

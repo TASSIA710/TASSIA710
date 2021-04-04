@@ -1,0 +1,23 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "Variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(100deg,
+		transparentize($Primary, 0) 0%,
+		transparentize($Primary, 0.35) 10%,
+		transparentize($Primary, 0.5) 20%,
+		transparentize($Accent, 0.5) 80%,
+		transparentize($Accent, 0.35) 90%,
+		transparentize($Accent, 0) 100%);
+}
