@@ -29,16 +29,34 @@
 .project-card-info {
 	border-color: $Accent;
 	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $Accent;
+	background-image: repeating-linear-gradient(-45deg,
+		mix($Gray, $Accent, 90%) 0rem,
+		mix($Gray, $Accent, 90%) 1rem,
+		mix($Gray, $Accent, 100%) 1rem,
+		mix($Gray, $Accent, 100%) 2rem,
+	);
 }
 
 .project-card-warning {
 	border-color: $StatusPending;
 	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $StatusPending;
+	background-image: repeating-linear-gradient(-45deg,
+		mix($Gray, $StatusPending, 90%) 0rem,
+		mix($Gray, $StatusPending, 90%) 1rem,
+		mix($Gray, $StatusPending, 100%) 1rem,
+		mix($Gray, $StatusPending, 100%) 2rem,
+	);
 }
 
 .project-card-danger {
 	border-color: $StatusFailed;
 	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $StatusFailed;
+	background-image: repeating-linear-gradient(-45deg,
+		mix($Gray, $StatusFailed, 90%) 0rem,
+		mix($Gray, $StatusFailed, 90%) 1rem,
+		mix($Gray, $StatusFailed, 100%) 1rem,
+		mix($Gray, $StatusFailed, 100%) 2rem,
+	);
 }
 
 
@@ -83,6 +101,8 @@
 	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: 0.05em;
+
+	-webkit-transition: letter-spacing 0.2s;
 }
 
 .project-description {
