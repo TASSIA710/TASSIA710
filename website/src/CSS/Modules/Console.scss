@@ -1,0 +1,72 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+.console-view {
+	padding-top: $LG3;
+}
+
+.console {
+	background: $Gray;
+	border-radius: $SM3;
+	padding: $MD1;
+	border: 1px solid $Gray3;
+	box-shadow: 0 0 8px $Gray1;
+	font-size: $MD2;
+	letter-spacing: 0.025em;
+}
+
+.console-output {
+	font-family: $FontMono;
+}
+
+.console-input {
+	font-size: $MD2;
+	font-family: $FontMono;
+	border-radius: $SM1;
+	padding: $SM1 $SM2;
+	display: block;
+	width: 100%;
+	background: $Gray;
+	color: $Text;
+	border: 1px solid darken($Gray, 10%);
+	outline: none;
+
+	-webkit-transition: background-color 0.2s, box-shadow 0.1s;
+}
+
+.console-input:hover:not(:focus):not(:active) {
+	box-shadow: inset 0 0 4px $Gray3;
+}
+
+.console-input:focus, .console-input:active {
+	background-color: $White;
+}
+
+
+
+.con-out-line {
+	margin-bottom: $SM1;
+}
+
+.con-out-user {
+	color: $Accent;
+	font-weight: 600;
+}
+
+.con-out-system {
+	color: $Primary;
+	font-weight: 600;
+}
+
+.con-out-helper {
+	color: $Label;
+	font-weight: 300;
+	margin-left: $SM1;
+	margin-right: $SM2;
+}
+
+.con-out-content {
+	color: $Text;
+}

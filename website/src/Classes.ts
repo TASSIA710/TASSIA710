@@ -2,6 +2,8 @@
 // Licensed under the MIT License.
 
 export {Colors} from "./Classes/Colors";
+export {Console} from "./Classes/Console";
+export {ConsoleCommand} from "./Classes/ConsoleCommand";
 export {Events} from "./Classes/Events";
 export {Icons} from "./Classes/Icons";
 export {Views} from "./Classes/Views";

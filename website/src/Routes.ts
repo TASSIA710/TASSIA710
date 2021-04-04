@@ -4,6 +4,7 @@
 import {Route} from "@tassilo/boiling-react";
 
 import {AboutRoute} from "./Routes/AboutRoute";
+import {ConsoleRoute} from "./Routes/ConsoleRoute";
 import {ContactRoute} from "./Routes/ContactRoute";
 import {IndexRoute} from "./Routes/IndexRoute";
 
@@ -19,6 +20,7 @@ import {SocialTwitchRoute} from "./Routes/Social/SocialTwitchRoute";
 export function LoadRoutes(): Route[] {
 	return [
 		new AboutRoute(),
+		new ConsoleRoute(),
 		new ContactRoute(),
 		new IndexRoute(),
 
