@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import {Component} from "react";
-import {Header} from "../Components";
+import {Footer, Header} from "../Components";
 
 interface LayoutProperties {
 	superTab: string;
@@ -14,6 +14,7 @@ export class Layout extends Component<LayoutProperties> {
 		return <div>
 			<Header tab={this.props.superTab} />
 			{this.props.children}
+			<Footer />
 		</div>;
 	}
 

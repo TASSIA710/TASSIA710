@@ -1,0 +1,33 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+.page-footer {
+	border-top: 1px solid $Gray;
+	padding: $LG1 $LG3;
+	background-color: $Gray;
+	box-shadow: 0 0 4px $Gray1;
+
+	font-family: $FontSans;
+	font-size: $MD1;
+	text-decoration: none;
+	color: $Text;
+}
+
+
+
+.page-footer a {
+	font-family: $FontSans;
+	font-size: $MD1;
+	text-decoration: none;
+	color: $Text;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+
+	-webkit-transition: color 0.2s;
+}
+
+.page-footer a:hover, .page-footer a:focus {
+	color: $Primary;
+}

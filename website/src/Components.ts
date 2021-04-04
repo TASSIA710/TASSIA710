@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 export {AboutView} from "./Components/AboutView";
+export {Footer} from "./Components/Footer";
 export {Header} from "./Components/Header";
 export {Layout} from "./Components/Layout";
 
