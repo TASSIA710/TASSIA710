@@ -9,7 +9,7 @@ export class Events {
 	private static loaded: EventType = EventType.NONE;
 
 	public static GetActualEvent(): EventType {
-		return EventType.NONE;
+		return EventType.XMAS;
 	}
 
 	public static GetLoadedEvent(): EventType {
@@ -28,13 +28,17 @@ export class Events {
 		if (event === EventType.NONE) return;
 		App.Logger().Info("Loading event " + event + "...");
 		switch (event) {
-			case EventType.XMAS_MONTH: /* TODO */ break;
-			case EventType.XMAS_DAYS: /* TODO */ break;
+			case EventType.WINTER: /* TODO */ break;
+			case EventType.XMAS: Events.LoadXMas(); break;
 			case EventType.NEW_YEARS: /* TODO */ break;
 			case EventType.EASTER: /* TODO */ break;
 			case EventType.GAY_PRIDE: Events.LoadGayPride(); break;
 		}
 		App.Logger().Info("Event " + event + " has been loaded!");
+	}
+
+	private static LoadXMas() {
+		document.body.classList.add("event-xmas");
 	}
 
 	private static LoadGayPride() {
@@ -47,13 +51,17 @@ export class Events {
 		if (event === EventType.NONE) return;
 		App.Logger().Info("Unloading event " + event + "...");
 		switch (event) {
-			case EventType.XMAS_MONTH: /* TODO */ break;
-			case EventType.XMAS_DAYS: /* TODO */ break;
+			case EventType.WINTER: /* TODO */ break;
+			case EventType.XMAS: Events.UnloadXMas(); break;
 			case EventType.NEW_YEARS: /* TODO */ break;
 			case EventType.EASTER: /* TODO */ break;
 			case EventType.GAY_PRIDE: Events.UnloadGayPride(); break;
 		}
 		App.Logger().Info("Event " + event + " has been unloaded!");
+	}
+
+	private static UnloadXMas() {
+		document.body.classList.remove("event-xmas");
 	}
 
 	private static UnloadGayPride() {

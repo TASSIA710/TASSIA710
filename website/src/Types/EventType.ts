@@ -4,8 +4,8 @@
 export enum EventType {
 
 	NONE = "NONE",
-	XMAS_MONTH = "XMAS_MONTH",
-	XMAS_DAYS = "XMAS_DAYS",
+	WINTER = "WINTER",
+	XMAS = "XMAS",
 	NEW_YEARS = "NEW_YEARS",
 	EASTER = "EASTER",
 	GAY_PRIDE = "GAY_PRIDE",

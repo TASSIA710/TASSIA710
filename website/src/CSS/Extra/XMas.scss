@@ -1,0 +1,50 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+// https://codepen.io/adamlindqvist/pen/EaPeJg
+$XMasRed: #CC231E;
+$XMasRed2: #F5624D;
+$XMasGreen: #0F8A5F;
+$XMasGreen2: #34A65F;
+$XMasBlue: #235E6F;
+
+
+
+body.event-xmas {
+	background-image: linear-gradient(100deg,
+		transparentize($XMasRed, 0) 0%,
+		transparentize($XMasRed, 0.35) 10%,
+		transparentize($XMasRed, 0.5) 20%,
+		transparentize($XMasGreen, 0.5) 80%,
+		transparentize($XMasGreen, 0.35) 90%,
+		transparentize($XMasGreen, 0) 100%);
+}
+
+
+
+body.event-xmas .page-header {
+	box-shadow: inset 0 2px 2px $XMasRed;
+}
+
+
+
+body.event-xmas .page-header .avatar {
+	box-shadow: 2px 0 4px $XMasRed,
+		0 2px 4px $XMasGreen,
+		-2px 0 4px $XMasRed,
+		0 -2px 4px $XMasGreen;
+}
+
+
+
+body.event-xmas .page-header .links a:nth-child(2n + 1):hover,
+body.event-xmas .page-header .links a:nth-child(2n + 1).active {
+	color: $XMasRed;
+}
+
+body.event-xmas .page-header .links a:nth-child(2n + 2):hover,
+body.event-xmas .page-header .links a:nth-child(2n + 2).active {
+	color: $XMasGreen;
+}
