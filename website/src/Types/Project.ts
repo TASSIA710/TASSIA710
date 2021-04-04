@@ -10,10 +10,17 @@ export interface Project {
 
 	Tags: string[];
 
-	Language: "";
+	Language: string;
+	LanguageIcon: string;
 	LanguageLink: string;
 
 	Hosted: "github" | "gitlab";
 	HostedLink: string;
+
+	IsScratch: boolean;
+	IsFork: boolean;
+	IsArchived: boolean;
+	IsAbandoned: boolean;
+	IsVulnerable: boolean;
 
 }

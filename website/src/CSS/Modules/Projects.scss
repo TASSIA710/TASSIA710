@@ -1,0 +1,147 @@
+// Website - (c) 2021 Tassilo <tassia710@gmail.com>
+// Licensed under the MIT License.
+
+@import "../Variables";
+
+.projects-view {
+	padding-top: $LG3;
+}
+
+
+
+.project-card-link {
+	text-decoration: none;
+}
+
+.project-card {
+	padding: $MD1;
+	border-radius: $SM2;
+	display: grid;
+	grid-template-columns: min-content auto;
+
+	color: $Text;
+	border: 1px solid darken($Gray, 10%);
+	background-color: $Gray;
+	box-shadow: 0 0 8px $Gray2;
+}
+
+.project-card-info {
+	border-color: $Accent;
+	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $Accent;
+}
+
+.project-card-warning {
+	border-color: $StatusPending;
+	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $StatusPending;
+}
+
+.project-card-danger {
+	border-color: $StatusFailed;
+	box-shadow: 0 0 8px $Gray2, inset 0 0 4px $StatusFailed;
+}
+
+
+
+.project-icons img {
+	height: $LG3;
+	padding: $SM1;
+}
+
+.project-icons a {
+	display: block;
+	margin-right: $MD1;
+	background-color: $Gray;
+	border: 1px solid $Gray;
+	border-radius: $SM2;
+
+	-webkit-transition: background-color 0.2s, border 0.2s;
+}
+
+.project-icons a:hover {
+	background-color: darken($Gray, 10%);
+	border: 1px solid darken($Gray, 20%);
+}
+
+.project-icons a:not(:first-child) {
+	margin-top: $MD1;
+}
+
+
+
+.project-content {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+}
+
+
+
+.project-title {
+	font-family: $FontSans;
+	font-size: $MD2;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.project-description {
+	font-family: $FontSans;
+	font-size: $MD1;
+	text-decoration: none;
+	font-weight: 400;
+	margin-top: $SM1;
+}
+
+
+
+.project-status {
+	padding: 0 $SM2;
+	border-radius: $SM1;
+	margin-left: $SM3;
+}
+
+.project-status-info {
+	color: $Accent;
+	border: 1px solid transparentize($Accent, 0.6);
+	background: transparentize($Accent, 0.8);
+}
+
+.project-status-warning {
+	color: $StatusPending;
+	border: 1px solid transparentize($StatusPending, 0.6);
+	background: transparentize($StatusPending, 0.8);
+}
+
+.project-status-danger {
+	color: $StatusFailed;
+	border: 1px solid transparentize($StatusFailed, 0.6);
+	background: transparentize($StatusFailed, 0.8);
+}
+
+.project-tag, .project-status {
+	font-family: $FontSans;
+	font-size: $MD1;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+}
+
+.project-tag {
+	display: inline-block;
+	color: $Primary;
+	border: 1px solid transparentize($Primary, 0.6);
+	background: transparentize($Primary, 0.8);
+	padding: 0 $SM2;
+	border-radius: $SM1;
+	margin: $SM1;
+
+	-webkit-transition: border 0.2s, background-color 0.2s;
+}
+
+.project-tag:hover {
+	border: 1px solid transparentize($Primary, 0.4);
+	background: transparentize($Primary, 0.6);
+}
+
+.project-tags {
+	display: block;
+}

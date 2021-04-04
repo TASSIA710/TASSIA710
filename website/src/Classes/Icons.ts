@@ -8,6 +8,9 @@ export class Icons {
 	public static readonly TWITCH = "https://img.icons8.com/fluent/512/000000/twitch.svg";
 	public static readonly TINDER = "https://img.icons8.com/fluent/512/000000/tinder.svg";
 
+	public static readonly LUA = "https://www.lua.org/images/logo.gif";
+	public static readonly SHELL = "https://img.icons8.com/fluent/512/000000/console.png";
+
 	public static readonly GITHUB = "/img/social/github.svg";
 	public static readonly GITLAB = "/img/social/gitlab.svg";
 

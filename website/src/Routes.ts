@@ -8,6 +8,8 @@ import {ConsoleRoute} from "./Routes/ConsoleRoute";
 import {ContactRoute} from "./Routes/ContactRoute";
 import {IndexRoute} from "./Routes/IndexRoute";
 
+import {ProjectsRoute} from "./Routes/Projects/ProjectsRoute";
+
 import {SocialRoute} from "./Routes/Social/SocialRoute";
 import {SocialDiscordRoute} from "./Routes/Social/SocialDiscordRoute";
 import {SocialGitHubRoute} from "./Routes/Social/SocialGitHubRoute";
@@ -23,6 +25,8 @@ export function LoadRoutes(): Route[] {
 		new ConsoleRoute(),
 		new ContactRoute(),
 		new IndexRoute(),
+
+		new ProjectsRoute(),
 
 		new SocialRoute(),
 		new SocialDiscordRoute(),

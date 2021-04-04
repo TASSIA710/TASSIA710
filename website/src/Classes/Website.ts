@@ -3,30 +3,25 @@
 
 import {Application, Route} from "@tassilo/boiling-react";
 import {LoadRoutes} from "../Routes";
-import {Person} from "../Types";
 import {Console, Events} from "../Classes";
+
+import {Tassilo} from "./Data/Me";
+import * as Projects from "./Data/Projects";
+import {Project} from "../Types";
 
 export class Website extends Application {
 
-	public static readonly SELF: Person = {
-		Avatar: "https://avatars.githubusercontent.com/u/38081490",
-		Birthday: new Date(2003, 8, 26),
+	public static readonly SELF = Tassilo;
 
-		Name: "Tassilo",
-		Age: 17,
-		Gender: "m",
-		Employment: "Unemployed",
+	public static readonly PROJECTS: Project[] = Object.values(Projects);
 
-		SocialDiscord: "https://discord.gg/yHfceNC6",
-		SocialGitHub: "https://github.com/TASSIA710",
-		SocialSteam: "https://steamcommunity.com/id/tassia710",
-		SocialTwitch: "https://www.twitch.tv/tassia710",
-		SocialTinder: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-	};
+
 
 	public constructor() {
 		super("Website", "1.0.0");
 	}
+
+
 
 	public LoadRoutes(): Route[] {
 		return LoadRoutes();
