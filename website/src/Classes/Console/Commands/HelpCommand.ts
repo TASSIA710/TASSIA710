@@ -16,6 +16,11 @@ export class HelpCommand extends ConsoleCommand {
 			return HelpCommand.EXIT_TOO_MANY_ARGS;
 		}
 
+		this.Print("Available commands:");
+
+		this.Print("event - Manually enable/disable events.");
+		this.Print("help - Shows this help.");
+
 		return 0;
 	}
 

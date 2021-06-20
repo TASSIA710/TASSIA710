@@ -19,6 +19,11 @@ export class EventCommand extends ConsoleCommand {
 
 		if (args.length === 2 && args[0] === "set") {
 			const event = EventType[args[1] as keyof typeof EventType];
+			if (event == null) {
+				this.Print("Event '" + args[1] + "' was not found.");
+				return 1;
+			}
+
 			this.Print("Loading event " + event + "...");
 			Events.SetEvent(event);
 			this.Print("Event '" + event + "' has been loaded.");
