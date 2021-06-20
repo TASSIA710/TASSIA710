@@ -28,7 +28,6 @@ export class Header extends Component<HeaderProperties> {
 				<Link href="/projects/" className={this.classForTab("projects")}>Projects</Link>
 				<Link href="/tools/" className={this.classForTab("tools")}>Tools</Link>
 				<Link href="/downloads/" className={this.classForTab("downloads")}>Downloads</Link>
-				<Link href="/social/" className={this.classForTab("social")}>Social</Link>
 				<Link href="/contact/" className={this.classForTab("contact")}>Contact</Link>
 			</div>
 

@@ -10,7 +10,6 @@ import {IndexRoute} from "./Routes/IndexRoute";
 
 import {ProjectsRoute} from "./Routes/Projects/ProjectsRoute";
 
-import {SocialRoute} from "./Routes/Social/SocialRoute";
 import {SocialDiscordRoute} from "./Routes/Social/SocialDiscordRoute";
 import {SocialGitHubRoute} from "./Routes/Social/SocialGitHubRoute";
 import {SocialSteamRoute} from "./Routes/Social/SocialSteamRoute";
@@ -28,7 +27,6 @@ export function LoadRoutes(): Route[] {
 
 		new ProjectsRoute(),
 
-		new SocialRoute(),
 		new SocialDiscordRoute(),
 		new SocialGitHubRoute(),
 		new SocialSteamRoute(),

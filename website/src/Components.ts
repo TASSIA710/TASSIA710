@@ -11,6 +11,3 @@ export {ConsoleView} from "./Components/Console/ConsoleView";
 
 export {ProjectCard} from "./Components/Project/ProjectCard";
 export {ProjectsView} from "./Components/Project/ProjectsView";
-
-export {SocialCard} from "./Components/Social/SocialCard";
-export {SocialView} from "./Components/Social/SocialView";
