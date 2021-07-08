@@ -3,10 +3,16 @@
 
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 @import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css?family=K2D");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 
 @import "Core";
-@import "Generic";
+
+@import "Extra/GayPride";
+@import "Extra/XMas";
+
+@import "Generic/Align";
+@import "Generic/Typography";
 
 @import "Modules/About";
 @import "Modules/Console";
@@ -14,6 +20,3 @@
 @import "Modules/Header";
 @import "Modules/Projects";
 @import "Modules/Social";
-
-@import "Extra/GayPride";
-@import "Extra/XMas";

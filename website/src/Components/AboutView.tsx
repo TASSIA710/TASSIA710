@@ -19,7 +19,7 @@ export class AboutView extends Component {
 					currently going to High School, doing my A-Levels. After that,
 					I'm planning on studying at the Technical University of Munich.
 					While studying at university, I'd love to go on a few internships
-					(maybe at JetBrains? &#10084;).
+					(maybe at JetBrains? <span className="hover-red">&#10084;</span>).
 				</p>
 
 				<p>
